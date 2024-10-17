@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">MyFamily</string>
+    <string name="sos">SOS</string>
+    <string name="guard">guard</string>
+    <string name="security">Security</string>
+    <string name="home">Home</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="GUARD">GUARD</string>
+    <string name="myfamily">MyFamily</string>
+    <string name="open_screen">Open Screen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Dashboard">Dashboard\n</string>
+    <string name="Profile">Profile</string>
+    <string name="Profiles">Profile</string>
+    <string name="dashboards">Dashboard</string>
+
 </resources>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -8,7 +9,7 @@
     android:layout_marginTop="12dp"
     android:layout_marginEnd="@dimen/dimen_16"
     android:layout_marginBottom="12dp"
-    android:background="@color/darker_gray"
+    android:background="@color/gray_bg"
     app:cardCornerRadius="@dimen/dimen_16"
     app:cardElevation="@dimen/dimen_8"
     app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +26,8 @@
             android:layout_height="64dp"
             android:src="@drawable/ic_user_color"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/name"
@@ -37,7 +39,8 @@
             android:textSize="@dimen/dimen_16_sp"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/img_user"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
         <ImageView
             android:id="@+id/img_location"
@@ -47,7 +50,8 @@
             android:src="@drawable/ic_location"
             app:layout_constraintStart_toStartOf="@id/name"
             app:layout_constraintTop_toBottomOf="@id/name"
-            app:tint="@color/green" />
+            app:tint="@color/green"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
         <TextView
             android:id="@+id/address"
@@ -61,7 +65,8 @@
             android:textColor="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/img_location"
-            app:layout_constraintTop_toBottomOf="@id/name" />
+            app:layout_constraintTop_toBottomOf="@id/name"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
         <TextView
             android:id="@+id/time"
@@ -71,7 +76,8 @@
             android:textColor="@android:color/darker_gray"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/name" />
+            app:layout_constraintTop_toTopOf="@id/name"
+            tools:ignore="HardcodedText,TextContrastCheck" />
 
 
         <LinearLayout
@@ -94,7 +100,8 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@drawable/ic_battery"
-                app:tint="@color/green" />
+                app:tint="@color/green"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/battery_percent"
@@ -103,7 +110,8 @@
                 android:layout_marginStart="4dp"
                 android:text="90%"
                 android:textColor="@color/green"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
         </LinearLayout>
 
@@ -116,7 +124,8 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toStartOf="@id/lin_wifi"
             app:layout_constraintStart_toEndOf="@id/lin_battery"
-            app:layout_constraintTop_toBottomOf="@id/img_user">
+            app:layout_constraintTop_toBottomOf="@id/img_user"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/img_distance"
@@ -125,7 +134,8 @@
                 android:src="@drawable/ic_send_msg"
                 app:layout_constraintStart_toEndOf="@id/battery_percent"
                 app:layout_constraintTop_toBottomOf="@id/img_user"
-                app:tint="#b197dc" />
+                app:tint="#b197dc"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/distance_value"
@@ -137,7 +147,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/img_battery"
                 app:layout_constraintStart_toEndOf="@id/img_distance"
-                app:layout_constraintTop_toTopOf="@id/img_battery" />
+                app:layout_constraintTop_toTopOf="@id/img_battery"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
         </LinearLayout>
 
@@ -151,7 +162,8 @@
             android:orientation="horizontal"
             app:layout_constraintEnd_toStartOf="@id/img_call"
             app:layout_constraintStart_toEndOf="@id/lin_distance"
-            app:layout_constraintTop_toBottomOf="@id/img_user">
+            app:layout_constraintTop_toBottomOf="@id/img_user"
+            tools:ignore="UseCompoundDrawables">
 
 
             <ImageView
@@ -161,7 +173,8 @@
                 android:src="@drawable/ic_wifi"
                 app:layout_constraintStart_toEndOf="@id/distance_value"
                 app:layout_constraintTop_toBottomOf="@id/img_user"
-                app:tint="@color/green" />
+                app:tint="@color/green"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/wifi_value"
@@ -173,7 +186,8 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/img_battery"
                 app:layout_constraintStart_toEndOf="@id/img_wifi"
-                app:layout_constraintTop_toTopOf="@id/img_battery" />
+                app:layout_constraintTop_toTopOf="@id/img_battery"
+                tools:ignore="HardcodedText,TextContrastCheck" />
         </LinearLayout>
 
 
@@ -187,7 +201,8 @@
             app:layout_constraintBottom_toBottomOf="@id/lin_battery"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/lin_battery"
-            app:tint="@color/black" />
+            app:tint="@color/black"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

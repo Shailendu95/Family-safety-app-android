@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:itemIconTint="@drawable/nav_items_colors"
-        app:itemTextColor="@color/holo_green_light"
+        app:itemTextColor="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_bar_items"
         tools:layout_editor_absoluteX="0dp" />

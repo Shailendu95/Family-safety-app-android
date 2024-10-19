@@ -16,30 +16,31 @@ class MainActivity : AppCompatActivity() {
         val bottomBar = findViewById<BottomNavigationView>(R.id.bottom_bar);
         bottomBar.setOnItemSelectedListener {
 
-            if(it.itemId==R.id.nav_guard)
-            {
+            when (it.itemId) {
+                R.id.nav_guard -> {
 
-                inflateFragement(GuardFragement.newInstance())
+                    inflateFragement(GuardFragement.newInstance())
 
-            }else if(it.itemId == R.id.nav_home)
-            {
+                }
+                R.id.nav_home -> {
 
-                inflateFragement(HomeFragment.newInstance());
-            }
-            else if(it.itemId == R.id.nav_dashboard)
-            {
-                inflateFragement(DashboardFragment.newInstance())
+                    inflateFragement(HomeFragment.newInstance());
+                }
+                R.id.nav_dashboard -> {
+                    inflateFragement(DashboardFragment.newInstance())
 
-            }
-
-            else
-            {
-                inflateFragement(ProfileFragment.newInstance())
+                }
+                R.id.nav_profile -> {
+                    inflateFragement(ProfileFragment.newInstance())
+                }
             }
 
 
             true;
         }
+
+        bottomBar.selectedItemId = R.id.nav_home
+
     }
 
 

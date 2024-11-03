@@ -1,11 +1,13 @@
 package com.example.myfamily
 
+import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import com.example.myfamily.R
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -39,6 +41,10 @@ class DashboardFragment : Fragment(), OnMapReadyCallback {
         val latLng = LatLng(28.7041, 77.1025) // Coordinates for New Delhi
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15f)) // Zoom level 15
         map.addMarker(MarkerOptions().position(latLng).title("Marker in New Delhi")) // Optional marker
+
+        map.isMyLocationEnabled = true    /////trouble may be arises
+
+
     }
 
     companion object {

@@ -23,6 +23,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 play = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "play" }
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version = "1.6.4" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

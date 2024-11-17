@@ -65,6 +65,9 @@ class LoginActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success
                     Log.d("Fire89", "signInWithCredential:success")
+
+
+                    SharedPref.putBoolean(PrefConstant.IS_USER_LOGGED_IN,true)
                     val user = auth.currentUser
                     Log.d("Fire89", "FirebaseAuth User: ${user?.displayName}")
 

@@ -23,7 +23,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFamily"
         tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MyFamily">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -52,6 +61,5 @@
             android:name=".GuardScreen"
             android:exported="true" />
     </application>
-
 
 </manifest>
